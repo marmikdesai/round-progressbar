@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.mar {
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	font-size: 70px;
+	cursor: default;
+	margin:200px;
+	background: #393939;
+	border-radius: 50%;
+}
+.mar>.number {
+	position: absolute;
+	top: 75px;
+	left: 0;
+	width: 100%;
+	font-size: 35px;
+	text-align: center;
+	z-index: 2;
+	font-family: Verdana, Geneva, sans-serif;
+	color:#636363;
+}
+.mar>.number .dec {
+	font-size: 35px;
+}
+.mar>#slice.mamu {
+	clip: rect(auto,auto,auto,auto);
+}
+.mar>#slice {
+	position: absolute;
+	clip: rect(0px,200px,200px,100px);
+	width: 200px;
+	height: 200px;
+}
+.mar>#slice>.part {
+	position: absolute;
+	background:#f87c00;
+	width: 200px;
+	height: 200px;
+	clip: rect(0px,100px,200px,0px);
+	border-radius: 50%;
+}
+.mar>#slice>.part.fill {
+	-moz-transform: rotate(180deg)!important;
+	-webkit-transform: rotate(180deg)!important;
+	-o-transform: rotate(180deg)!important;
+	transform: rotate(180deg)!important;
+}
+.mar:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	background: #ffffff;
+	border-radius: 50%;
+	z-index: 1;
+	top:20px;
+	left:20px;
+}
